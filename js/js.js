@@ -3,7 +3,7 @@
 function randomValue(min,max){
   return Math.floor(Math.random() *(max-min+1)+min);
 }
-let parent=document.getElementById('cont');
+let article=document.getElementById('cont');
 let workinghours = ['06:00 am','07:00 am', '08:00 am', '09:00 am', '10:00 am','11:00 am', '12:00 pm', '01:00 pm', '02:00 pm', '03:00 pm', '04:00 pm', '05:00 pm', '06:00 pm' ,'07:00 pm'];
 const Seattle={
   minc:23,
@@ -28,10 +28,10 @@ const Seattle={
   },
   display : function(){
     let h2=document.createElement('h2');
-    parent.appendChild(h2);
+    article.appendChild(h2);
     h2.textContent=this.city;
     let ul =document.createElement('ul');
-    parent.appendChild(ul);
+    article.appendChild(ul);
     let li=null;
     for(let i=0;i<this.cookiesperhour.length;i++)
     {
@@ -72,10 +72,10 @@ const Tokyo={
   },
   display : function(){
     let h2=document.createElement('h2');
-    parent.appendChild(h2);
+    article.appendChild(h2);
     h2.textContent=this.city;
     let ul =document.createElement('ul');
-    parent.appendChild(ul);
+    article.appendChild(ul);
     let li=null;
     for(let i=0;i<this.cookiesperhour.length;i++)
     {
@@ -116,10 +116,10 @@ const Dubai={
   },
   display : function(){
     let h2=document.createElement('h2');
-    parent.appendChild(h2);
+    article.appendChild(h2);
     h2.textContent=this.city;
     let ul =document.createElement('ul');
-    parent.appendChild(ul);
+    article.appendChild(ul);
     let li=null;
     for(let i=0;i<this.cookiesperhour.length;i++)
     {
@@ -160,10 +160,10 @@ const Paris={
   },
   display : function(){
     let h2=document.createElement('h2');
-    parent.appendChild(h2);
+    article.appendChild(h2);
     h2.textContent=this.city;
     let ul =document.createElement('ul');
-    parent.appendChild(ul);
+    article.appendChild(ul);
     let li=null;
     for(let i=0;i<this.cookiesperhour.length;i++)
     {
@@ -205,10 +205,10 @@ const Lima={
   },
   display : function(){
     let h2=document.createElement('h2');
-    parent.appendChild(h2);
+    article.appendChild(h2);
     h2.textContent=this.city;
     let ul =document.createElement('ul');
-    parent.appendChild(ul);
+    article.appendChild(ul);
     let li=null;
     for(let i=0;i<this.cookiesperhour.length;i++)
     {
